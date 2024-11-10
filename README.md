@@ -10,9 +10,9 @@ It should be run with --privileged, in order to have access to the hardware and 
 **Create Command**
 Listening on port 8443 (user=root, password=docker):
 
-	docker create --name=storman --hostname=storman --privileged -e TZ=<timezone> -e PGID=1000 -e PUID=1000 -p 8443:8443/tcp thomashilzendegen/docker-storman
+	docker create --name=storman --hostname=storman --privileged -e TZ=<timezone> -e PGID=1000 -e PUID=1000 -p 8443:8443/tcp evgental/docker-maxview3.07.23980
 
 **Build with Custom Password**
 Build first edditing the password arg
 
-	docker build https://github.com/evgental/docker-maxview3.07.23980/blob/fb34b4ff02e44b391ddf2dbde01a52d6e2009105/Dockerfile -t thomashilzendegen/docker-storman --build-arg password={your password here}
+	docker build https://raw.githubusercontent.com/evgental/docker-maxview3.07.23980/refs/heads/main/Dockerfile -t evgental/docker-maxview3.07.23980 --build-arg password={your password here}
