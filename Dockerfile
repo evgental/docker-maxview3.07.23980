@@ -16,7 +16,7 @@ RUN apt-get update && apt-get remove --purge -y openssh-client openssh-server op
 sh -c "echo root:${password:-docker} |chpasswd" && \
 curl -o /tmp/msm_linux.tgz http://download.adaptec.com/raid/storage_manager/msm_linux_x64_v3_07_23980.tgz && \
 tar -xf /tmp/msm_linux.tgz -C /tmp && \
-dpkg -i /tmp/manager/StorMan-3.04-23699_amd64.deb && \
+dpkg -i /tmp/manager/StorMan-3.07-23980_amd64.deb && \
 rm -rf /etc/service/sshd /etc/my_init.d/00_regen_ssh_host_keys.sh /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 chmod +x /etc/my_init.d/StorMan
 
