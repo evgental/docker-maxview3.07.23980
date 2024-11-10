@@ -3,7 +3,7 @@
 **Purpose**
 Container running the Adaptec Maxview Storage Manager application and the necessary daemons.
 
-With this container, you can manage an Adaptec RAID adapter on the dockerhost. It is based on Ubuntu from phusion/baseimage and Adaptec MSM version V3.03-23668
+With this container, you can manage an Adaptec RAID adapter on the dockerhost. It is based on Ubuntu from phusion/baseimage and Adaptec MSM version V3.07.23980
 
 It should be run with --privileged, in order to have access to the hardware and insert the necessary kernel modules.
 
