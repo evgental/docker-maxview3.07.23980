@@ -1,7 +1,7 @@
 FROM phusion/baseimage:bionic-1.0.0
 
 # set maintainer label
-LABEL maintainer="thomashilzendegen"
+LABEL maintainer="evgental"
 
 # Set correct environment variables
 ARG password
