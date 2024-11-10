@@ -15,4 +15,4 @@ Listening on port 8443 (user=root, password=docker):
 **Build with Custom Password**
 Build first edditing the password arg
 
-	docker build https://raw.githubusercontent.com/thomashilzendegen/docker-storman/master/Dockerfile -t thomashilzendegen/docker-storman --build-arg password={your password here}
+	docker build https://raw.githubusercontent.com/evgental/docker-maxview3.07.23980/64b342bfe3c8db061c27293292988adf4ca51ee5/Dockerfile -t thomashilzendegen/docker-storman --build-arg password={your password here}
